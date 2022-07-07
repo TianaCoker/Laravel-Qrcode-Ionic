@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen, QRScanner, QRScannerStatus,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
